@@ -56,7 +56,7 @@ if [ -d "$forte_bin_dir" ]; then
   # go to bin directory
   cd "./$forte_bin_dir"
   # configure forte for opc_ua
-  cmake -DCMAKE_BUILD_TYPE=Debug -DFORTE_ARCHITECTURE=Posix -DFORTE_MODULE_CONVERT=ON -DFORTE_COM_ETH=ON -DFORTE_MODULE_IEC61131=ON -DFORTE_COM_OPC_UA=ON -DFORTE_COM_OPC_UA_INCLUDE_DIR=/4diac/open62541/build -DFORTE_COM_OPC_UA_LIB_DIR=/4diac/open62541/build/bin -DFORTE_COM_OPC_UA_LIB=libopen62541.so ..
+  cmake -DCMAKE_BUILD_TYPE=Debug -DFORTE_ARCHITECTURE=Posix -DFORTE_MODULE_LMS_EV3=ON -DFORTE_MODULE_CONVERT=ON -DFORTE_COM_ETH=ON -DFORTE_MODULE_IEC61131=ON -DFORTE_COM_OPC_UA=ON -DFORTE_COM_OPC_UA_INCLUDE_DIR=/4diac/open62541/build -DFORTE_COM_OPC_UA_LIB_DIR=/4diac/open62541/build/bin -DFORTE_COM_OPC_UA_LIB=libopen62541.so ..
   # make
   make -j	
   cd "./../../.."	#go back to start folder
